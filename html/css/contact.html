@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header class="Hero">
+        <div class="Header">
+            <div class="IconsText">
+                <div class="IconText">
+                    <i class="ri-phone-line"></i>
+                    <span class="Number">+84 367-716-957</span>
+                </div>
+                <div class="IconText">
+                    <i class="ri-mail-line"></i>
+                    <span class="Mail">nightmale28@gmail.com</span>
+                </div>
+                <div class="IconText2">
+                    <div class="IconText">
+                        <i class="ri-map-pin-line"></i>
+                        <span class="Address">Nguyen Huy Tuong St. Da Nang City</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="Header2">
+            <div class="Logo">
+                <img src="images/logo.png">
+                <span class="LogoText">PetShop</span>
+            </div>
+            <div class="Menu">
+                <a href="index.html" class="MenuItem">Home</a>
+                <a href="shop.html" class="MenuItem">Shop</a>
+                <a href="about.html" class="MenuItem">About Us</a>
+                <a href="#" class="MenuItem active">Contact Us</a>
+            </div>
+            <div class="InputIcons">
+                <input type="text" class="SearchInput" placeholder="Search products...">
+                <i class="ri-search-line"></i>
+                <i class="ri-heart-line"></i>
+                <i class="ri-shopping-cart-line"></i>
+            </div>
+        </div>
+        <div class="TextButton">
+            <div class="Frame3">
+                <span class="PetShop">Pet Shop</span>
+                <span class="Slogan">A pet store with everything you need</span>
+            </div>
+            <div class="Description">Sociis blandit et pellentesque aliquet at quisque tortor lacinia nullam. Mattis aenean scelerisque dui libero</div>
+            <button class="Button"><span class="ShopNow"><a href="shop.html">Shop Now</a></span></button>
+        </div>
+    </header>
+    <main>
+        <section class="ContactSection">
+            <div class="ContactForm">
+                <h2>Contact Us</h2>
+                <form>
+                    <div>
+                        <input type="text" placeholder="First name" required>
+                        <input type="text" placeholder="Last name" required>
+                    </div>
+                    <input type="email" placeholder="E-mail address" required>
+                    <textarea placeholder="Your message..." rows="5" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+            <div class="ContactInfo">
+                <h2>Feel free to contact us</h2>
+                <p>At et vehicula sodales est proin turpis pellentesque sinulla a aliquam amet rhoncus quisque eget sit. Sociis blandit et pellentesque aliquet at quisque tortor lacinia nullam.</p>
+                <div class="InfoItem">
+                    <i class="ri-map-pin-line"></i>
+                    <span>8592 Fairground St. Tallahassee, FL 32303</span>
+                </div>
+                <div class="InfoItem">
+                    <i class="ri-mail-line"></i>
+                    <span>rgarton@outlook.com</span>
+                </div>
+                <div class="InfoItem">
+                    <i class="ri-phone-line"></i>
+                    <span>+775 378-6348</span>
+                </div>
+                <div class="InfoItem">
+                    <i class="ri-time-line"></i>
+                    <span>Mon - Fri: 10AM - 10PM</span>
+                </div>
+            </div>
+        </section>
+        <section class="MapSection">
+            <div class="MapContainer" id="map" style="height: 500px; width: 100%;"></div>
+        </section>
+        <script>
+            function initMap() {
+                const location = { lat: 16.047079, lng: 108.206230 }; // Vị trí Đà Nẵng, Việt Nam
+                const map = new google.maps.Map(document.getElementById("map"), {
+                    zoom: 12,
+                    center: location,
+                });
+                const marker = new google.maps.Marker({
+                    position: location,
+                    map: map,
+                });
+            }
+    
+            // Tải API Google Maps
+            function loadScript() {
+                const script = document.createElement("script");
+                script.src = `https://maps.googleapis.com/maps/api/js?key=AIzaSyB6fdtySiqSYQRwcE8l9sPifrRyJ8AVvsA&callback=initMap`;
+                script.async = true;
+                script.defer = true;
+                document.head.appendChild(script);
+            }
+    
+            document.addEventListener("DOMContentLoaded", loadScript);
+        </script>
+    </main>
+    <footer class="Footer">
+        <div class="FooterSection">
+            <h3>Pet Shop</h3>
+            <p>Sed viverra eget fames sit varius. Pellentesque mattis libero viverra dictumst ornare sed justo convallis vitae</p>
+            <div class="SocialIcons">
+                <a href="#"><i class="ri-facebook-fill"></i></a>
+                <a href="#"><i class="ri-instagram-fill"></i></a>
+                <a href="#"><i class="ri-twitter-fill"></i></a>
+                <a href="#"><i class="ri-youtube-fill"></i></a>
+            </div>
+        </div>
+        <div class="FooterSection">
+            <h3>Company</h3>
+            <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Gift cards</a></li>
+                <li><a href="#">Careers</a></li>
+            </ul>
+        </div>
+        <div class="FooterSection">
+            <h3>Useful Links</h3>
+            <ul>
+                <li><a href="#">New products</a></li>
+                <li><a href="#">Best sellers</a></li>
+                <li><a href="#">Discount</a></li>
+                <li><a href="#">F.A.Q</a></li>
+            </ul>
+        </div>
+        <div class="FooterSection">
+            <h3>Customer Service</h3>
+            <ul>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Shipping</a></li>
+                <li><a href="#">Returns</a></li>
+                <li><a href="#">Order tracking</a></li>
+            </ul>
+        </div>
+        <div class="FooterSection">
+            <h3>Store</h3>
+            <p>8592 Fairground St. Tallahassee, FL 32303</p>
+            <p>+775 378-6348</p>
+            <p>rgarton@outlook.com</p>
+        </div>
+    </footer>
+</body>
+</html>

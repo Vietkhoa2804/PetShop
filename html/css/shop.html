@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header class="Hero">
+        <div class="Header">
+            <div class="IconsText">
+                <div class="IconText">
+                    <i class="ri-phone-line"></i>
+                    <span class="Number">+84 367-716-957</span>
+                </div>
+                <div class="IconText">
+                    <i class="ri-mail-line"></i>
+                    <span class="Mail">nightmale28@gmail.com</span>
+                </div>
+                <div class="IconText2">
+                    <div class="IconText">
+                        <i class="ri-map-pin-line"></i>
+                        <span class="Address">Nguyen Huy Tuong St. Da Nang City</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="Header2">
+            <div class="Logo">
+                <img src="images/logo.png">
+                <span class="LogoText">PetShop</span>
+            </div>
+            <div class="Menu">
+                <a href="index.html" class="MenuItem">Home</a>
+                <a href="#" class="MenuItem active">Shop</a>
+                <a href="about.html" class="MenuItem">About Us</a>
+                <a href="contact.html" class="MenuItem">Contact Us</a>
+            </div>
+            <div class="InputIcons">
+                <input type="text" class="SearchInput" placeholder="Search products...">
+                <i class="ri-search-line"></i>
+                <i class="ri-heart-line"></i>
+                <i class="ri-shopping-cart-line"></i>
+            </div>
+        </div>
+        <div class="HeroContens">
+            <div class="HeroContent">
+                <span class="PetShop">Pet Shop</span>
+                <h1 class="Slogan">The friendly and caring small pet store</h1>
+                <p class="Description">At et vehicula sodales est proin turpis pellentesque sinulla a aliquam amet rhoncus quisque eget sit</p>
+            </div>
+            <div class="HeroImage">
+                <img src="hero-image.png" alt="Hero Image">
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="ShopByPet">
+            <h2>Shop by pet</h2>
+            <div class="NavigationButtons left">
+                <button class="NavigationButton prev"><i class="ri-arrow-left-s-line"></i></button>
+            </div>
+            <div class="PetCategories">
+                <div class="PetCategory">
+                    <img src="cat.png" alt="Cat">
+                    <span>Cat</span>
+                </div>
+                <div class="PetCategory">
+                    <img src="hamster.png" alt="Hamster">
+                    <span>Hamster</span>
+                </div>
+                <div class="PetCategory">
+                    <img src="dog.png" alt="Dog">
+                    <span>Dog</span>
+                </div>
+                <div class="PetCategory">
+                    <img src="parrot.png" alt="Parrot">
+                    <span>Parrot</span>
+                </div>
+                <div class="PetCategory">
+                    <img src="rabbit.png" alt="Rabbit">
+                    <span>Rabbit</span>
+                </div>
+                <div class="PetCategory">
+                    <img src="turtle.png" alt="Turtle">
+                    <span>Turtle</span>
+                </div>
+            </div>
+            <div class="NavigationButtons right">
+                <button class="NavigationButton next"><i class="ri-arrow-right-s-line"></i></button>
+            </div>
+        </section>
+        <section class="ProductList">
+            <div class="FilterSection">
+                <h3>Filter by categories</h3>
+                    <ul>
+                        <li><input type="checkbox"> Furniture (21)</li>
+                        <li><input type="checkbox"> Bowls (28)</li>
+                        <li><input type="checkbox"> Clothing (12)</li>
+                        <li><input type="checkbox"> Food (80)</li>
+                        <li><input type="checkbox"> Toys (90)</li>
+                        <li><input type="checkbox"> Sale (24)</li>
+                    </ul>
+                <h3>Filter by Price</h3>
+                    <div class="PriceRange">
+                        <input type="range" min="9" max="399" value="100">
+                        <span>Price: $9 - $399</span>
+                        <button>Apply</button>
+                    </div>
+                <h3>Filter by brands</h3>
+                    <ul>
+                        <li><input type="checkbox"> Natural food (28)</li>
+                        <li><input type="checkbox"> Pet care (18)</li>
+                        <li><input type="checkbox"> Dogs friend (16)</li>
+                        <li><input type="checkbox"> Pet food (40)</li>
+                        <li><input type="checkbox"> Favorite pet (28)</li>
+                        <li><input type="checkbox"> Green line (18)</li>
+                    </ul>
+                <h3>Filter by tags</h3>
+                    <div class="Tags">
+                        <button>Dog food</button>
+                        <button>Cat food</button>
+                        <button>Natural</button>
+                        <button>Parrot</button>
+                        <button>Small dog</button>
+                        <button>Cat</button>
+                    </div>
+                <h3>Popular products</h3>
+                    <ul>
+                        <li>Premium Dog Food $99</li>
+                        <li>Premium Cat Food $220</li>
+                        <li>Cat Bed $50</li>
+                        <li>Dog Leash $220</li>
+                        <li>Cat Bowl $220</li>
+                    </ul>
+            </div>
+            <div class="ProductsShop">
+                <!-- Danh sách sản phẩm -->
+                <div class="Product">
+                    <img src="product1.jpg" alt="Pet Carrier">
+                    <div class="ProductContent">
+                        <div class="ProductText">
+                            <h3>Pet Carrier</h3>
+                            <p class="ProductPrice">$29.99</p>
+                        </div>
+                        <i class="ri-heart-line ProductIcon"></i>
+                    </div>
+                </div>
+                <div class="Product">
+                    <img src="product2.jpg" alt="Cat Bowl">
+                    <div class="ProductContent">
+                        <div class="ProductText">
+                            <h3>Cat Bowl</h3>
+                            <p class="ProductPrice">$20.99</p>
+                        </div>
+                        <i class="ri-heart-line ProductIcon"></i>
+                    </div>
+                </div>
+                <div class="Product">
+                    <img src="product3.jpg" alt="Cat Bed">
+                    <div class="ProductContent">
+                        <div class="ProductText">
+                            <h3>Cat Bed</h3>
+                            <p class="ProductPrice">$49.99</p>
+                        </div>
+                        <i class="ri-heart-line ProductIcon"></i>
+                    </div>
+                </div>
+                <div class="Product">
+                    <img src="product4.jpg" alt="Dog Leash">
+                    <div class="ProductContent">
+                        <div class="ProductText">
+                            <h3>Dog Leash</h3>
+                            <p class="ProductPrice">$9.99</p>
+                        </div>
+                        <i class="ri-heart-line ProductIcon"></i>
+                    </div>
+                </div>
+                <div class="Product">
+                    <img src="product5.jpg" alt="Dog Bed">
+                    <div class="ProductContent">
+                        <div class="ProductText">
+                            <h3>Dog Bed</h3>
+                            <p class="ProductPrice">$49.99</p>
+                        </div>
+                        <i class="ri-heart-line ProductIcon"></i>
+                    </div>
+                </div>
+                <div class="Product">
+                    <img src="product6.jpg" alt="Premium Cat Food">
+                    <div class="ProductContent">
+                        <div class="ProductText">
+                            <h3>Premium Cat Food</h3>
+                            <p class="ProductPrice">$20.99</p>
+                        </div>
+                        <i class="ri-heart-line ProductIcon"></i>
+                    </div>
+                </div>
+                <div class="Product">
+                    <img src="product7.jpg" alt="Dog Bowl">
+                    <div class="ProductContent">
+                        <div class="ProductText">
+                            <h3>Dog Bowl</h3>
+                            <p class="ProductPrice">$4.99</p>
+                        </div>
+                        <i class="ri-heart-line ProductIcon"></i>
+                    </div>
+                </div>
+                <div class="Product">
+                    <img src="product8.jpg" alt="Premium Dog Food">
+                    <div class="ProductContent">
+                        <div class="ProductText">
+                            <h3>Premium Dog Food</h3>
+                            <p class="ProductPrice">$29.99</p>
+                        </div>
+                        <i class="ri-heart-line ProductIcon"></i>
+                    </div>
+                </div>
+                <div class="Product">
+                    <img src="product9.jpg" alt="Dog Bed">
+                    <div class="ProductContent">
+                        <div class="ProductText">
+                            <h3>Dog Bed</h3>
+                            <p class="ProductPrice">$49.99</p>
+                        </div>
+                        <i class="ri-heart-line ProductIcon"></i>
+                    </div>
+                </div>
+                <div class="Product">
+                    <img src="product10.jpg" alt="Dog Bed">
+                    <div class="ProductContent">
+                        <div class="ProductText">
+                            <h3>Dog Bed</h3>
+                            <p class="ProductPrice">$49.99</p>
+                        </div>
+                        <i class="ri-heart-line ProductIcon"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="Pagination">
+                <button class="active">1</button>
+                <button>2</button>
+                <button>Next</button>
+            </div>
+            </div>
+        </section>
+    </main>
+    <footer class="Footer">
+        <div class="FooterSection">
+            <h3>Pet Shop</h3>
+            <p>Sed viverra eget fames sit varius. Pellentesque mattis libero viverra dictumst ornare sed justo convallis vitae</p>
+            <div class="SocialIcons">
+                <a href="#"><i class="ri-facebook-fill"></i></a>
+                <a href="#"><i class="ri-instagram-fill"></i></a>
+                <a href="#"><i class="ri-twitter-fill"></i></a>
+                <a href="#"><i class="ri-youtube-fill"></i></a>
+            </div>
+        </div>
+        <div class="FooterSection">
+            <h3>Company</h3>
+            <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Gift cards</a></li>
+                <li><a href="#">Careers</a></li>
+            </ul>
+        </div>
+        <div class="FooterSection">
+            <h3>Useful Links</h3>
+            <ul>
+                <li><a href="#">New products</a></li>
+                <li><a href="#">Best sellers</a></li>
+                <li><a href="#">Discount</a></li>
+                <li><a href="#">F.A.Q</a></li>
+            </ul>
+        </div>
+        <div class="FooterSection">
+            <h3>Customer Service</h3>
+            <ul>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Shipping</a></li>
+                <li><a href="#">Returns</a></li>
+                <li><a href="#">Order tracking</a></li>
+            </ul>
+        </div>
+        <div class="FooterSection">
+            <h3>Store</h3>
+            <p>8592 Fairground St. Tallahassee, FL 32303</p>
+            <p>+775 378-6348</p>
+            <p>rgarton@outlook.com</p>
+        </div>
+    </footer>
+</body>
+</html>

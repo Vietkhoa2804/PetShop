@@ -10,12 +10,12 @@
             if ($url == NULL) {
                 $url = [$this->controller];
             }
-            if(file_exists('../App/Controllers/' . $url[0] . '.php'))
+            if(file_exists('./App/Controllers/' . $url[0] . '.php'))
             {
                 $this->controller = $url[0];
                 unset($url[0]);
             }
-            require_once '../App/Controllers/' . $this->controller . '.php';
+            require_once './App/Controllers/' . $this->controller . '.php';
             $this->controller = new $this->controller;
 
             if(isset($url[1]))
